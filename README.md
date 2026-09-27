@@ -35,8 +35,10 @@ As of September 2025, there are about 1500 CWEs. Their number grows relatively s
 
 ### CVE (Common Vulnerabilities and Exposures)
 These are particular vulnerabilities in specific version of a specific package of a specific language.  
-For Example: 
+For Example:  
 CVE-2026-4519: webbrowser.open() built-in module function of python allows URLs beginning with "-" which can lead to Command injection (CWE-78)  
+
+
 CVE-2026-3087: shutil.unpack_archive()  built-in module function of python in windows can extract a zip outside target directory which can lead to Path Traversal (CWE-22)  
 
 As of September 2025, there are about 70,000 CWEs. Their number is quickly growing by 10,000-20,000 new CVEs every year.  
