@@ -27,58 +27,59 @@
 
 
 ├── INJECTION  
-│   │
-│   ├── CWE-77 Command Injection  
-│   │   └── CWE-78 OS Command Injection  
-│   │
-│   ├── CWE-79 Cross-Site Scripting  
-│   │
-│   ├── CWE-89 SQL Injection  
-│   │
-│   └── CWE-94 Code Injection  
-│
-├── ACCESS CONTROL / AUTHENTICATION
-│   │
-│   ├── CWE-284 Improper Access Control
-│   │   │
-│   │   ├── CWE-862 Missing Authorization
-│   │   │
-│   │   └── CWE-863 Incorrect Authorization
-│   │       │
-│   │       └── CWE-639 Authorization Bypass
-│   │
-│   └── CWE-306 Missing Authentication
-│
-├── MEMORY SAFETY
-│   │
-│   ├── CWE-787 Out-of-bounds Write
-│   │   │
-│   │   └── CWE-120 Classic Buffer Overflow
-│   │       ├── CWE-121 Stack based Buffer Overflow
-│   │       └── CWE-122 Heap Overflow
-│   │
-│   ├── CWE-125 Out-of-bounds Read
-│   │
-│   ├── CWE-416 Use-After-Free
-│   │
-│   └── CWE-476 Null Pointer Dereference
-│
-├── INPUT / DATA HANDLING
-│   │
-│   ├── CWE-20 Improper Input Validation
-│   ├── CWE-22 Path Traversal
-│   ├── CWE-434 Unrestricted File Upload
-│   └── CWE-502 Deserialization of Untrusted Data
-│
-├── WEB REQUEST / WEB SECURITY
-│   │
-│   ├── CWE-352 CSRF
-│   └── CWE-918 SSRF
-│
-├── INFORMATION EXPOSURE
-│   │
-│   └── CWE-200 Information Disclosure
-│
-└── RESOURCE MANAGEMENT
+│   │  
+│   ├── CWE-77 Command Injection    
+│   │   └── CWE-78 OS Command Injection    
+│   │  
+│   ├── CWE-79 Cross-Site Scripting    
+│   │  
+│   ├── CWE-89 SQL Injection    
+│   │  
+│   └── CWE-94 Code Injection    
+│  
+├── ACCESS CONTROL / AUTHENTICATION  
+│   │  
+│   ├── CWE-284 Improper Access Control  
+│   │   │  
+│   │   ├── CWE-862 Missing Authorization  
+│   │   │  
+│   │   └── CWE-863 Incorrect Authorization  
+│   │       │  
+│   │       └── CWE-639 Authorization Bypass  
+│   │  
+│   └── CWE-306 Missing Authentication  
+│  
+├── MEMORY SAFETY  
+│   │  
+│   ├── CWE-787 Out-of-bounds Write  
+│   │   │  
+│   │   └── CWE-120 Classic Buffer Overflow  
+│   │       ├── CWE-121 Stack based Buffer Overflow  
+│   │       └── CWE-122 Heap Overflow  
+│   │  
+│   ├── CWE-125 Out-of-bounds Read  
+│   │  
+│   ├── CWE-416 Use-After-Free  
+│   │  
+│   └── CWE-476 Null Pointer Dereference  
+│  
+├── INPUT / DATA HANDLING  
+│   │  
+│   ├── CWE-20 Improper Input Validation  
+│   ├── CWE-22 Path Traversal  
+│   ├── CWE-434 Unrestricted File Upload  
+│   └── CWE-502 Deserialization of Untrusted Data  
+│  
+├── WEB REQUEST / WEB SECURITY  
+│   │  
+│   ├── CWE-352 CSRF   
+│   └── CWE-918 SSRF  
+│  
+├── INFORMATION EXPOSURE  
+│   │  
+│   └── CWE-200 Information Disclosure  
+│  
+└── RESOURCE MANAGEMENT  
+
     │
     └── CWE-770 Resource Allocation Without Limits
