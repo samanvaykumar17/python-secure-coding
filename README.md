@@ -63,7 +63,7 @@ In 2025, the Trump administration briefly planned on defunding the CVE program a
 OWASP Top 10 releases a list of 10 most dangerous families of vulnerabilities once every 3-4 years. Each of the top 10 families may contain 4-5 CWEs.  
 MITRE Top 25 releases a list of 25 most dangerous CWEs of vulnerabilities every year.  
 
-# False Positives;
+# False Positives
 Sometimes the vulnerabilities reported by SAST/SCA tools will not be exploitable in our case  4
 
 ## Reachability
