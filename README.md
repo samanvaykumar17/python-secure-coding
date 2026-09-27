@@ -81,7 +81,7 @@ For example: You have a regular expression ReDoS vulnerability but you firewall 
 After analysing whether the vulnerability is a true positive for your case, you need to remediate it.  
 
 ## SAST  
-In case of SAST, you need to make changes to your source code by following the CWE-specific secure coding practices to replace the vulnerable code. Your code changes should not break the code and thus appropriate tests are needed.    
+In case of SAST, you need to make changes to your source code by following the CWE-specific secure coding practices to replace the vulnerable code. Your code changes should not break the code or contract with downstream applications and thus appropriate tests are needed.    
 
 ## SCA 
 In case of SCA, you need to upgrade the vulnerable library to the available patch, after analyzing how it will affect your code. Whether the migration will break your existing code, will the package upgrade introduce new and even more dangerous vulnerabilities, or if you need to find a suitable alternative to the given library. The same package may be used in multiple other microservices, which may contain the same vulnerability. Thus you may reuse the same strategy to remediate the same CVE in other repositories. If changing the packge version is not possible you may need to apply compensating controls (in code or infrastructure) to make sure that the vulnerabilities are not exploitable.  
