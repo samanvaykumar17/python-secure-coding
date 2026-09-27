@@ -80,6 +80,5 @@
 │   └── CWE-200 Information Disclosure  
 │  
 └── RESOURCE MANAGEMENT  
-
     │
     └── CWE-770 Resource Allocation Without Limits
