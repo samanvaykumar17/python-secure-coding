@@ -63,7 +63,25 @@ In 2025, the Trump administration briefly planned on defunding the CVE program a
 OWASP Top 10 releases a list of 10 most dangerous families of vulnerabilities once every 3-4 years. Each of the top 10 families may contain 4-5 CWEs.  
 MITRE Top 25 releases a list of 25 most dangerous CWEs of vulnerabilities every year.  
 
-# False Positives
+# False Positives;
+Sometimes the vulnerabilities reported by SAST/SCA tools will not be exploitable in our case  4
+
+## Reachability
+For example: you are using a math library whose graphs module has a CVE. But you are just using the stats module.  
+
+## Platform
+For example: the CVE is application only to windows environments, but you are using linux.  
+
+## Firewall/Infrastructure
+
+For example: You have a regular expression ReDoS vulnerability but you firewall allows only 100 requests in 1 minute. Or you have a library allows outbound requests to vulnerable endpoint, but your VPN settings restricts the hosts to which outbound call can be made.   
 
 # Remediation
 
+After analysing whether the vulnerability is a true positive for your case, you need to remediate it.  
+
+## SAST  
+In case of SAST, you need to make changes to your source code by following the CWE-specific secure coding practices to replace the vulnerable code. Your code changes should not break the code and thus appropriate tests are needed.    
+
+## SCA 
+In case of SCA, you need to upgrade the vulnerable library to the available patch, after analyzing how it will affect your code. Whether the migration will break your existing code, will the package upgrade introduce new and even more dangerous vulnerabilities, or if you need to find a suitable alternative to the given library. The same package may be used in multiple other microservices, which may contain the same vulnerability. Thus you may reuse the same strategy to remediate the same CVE in other repositories. If changing the packge version is not possible you may need to apply compensating controls (in code or infrastructure) to make sure that the vulnerabilities are not exploitable.  
