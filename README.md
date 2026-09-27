@@ -3,12 +3,12 @@
 ## Types of Testing
 We can do four types of automated vulnerability testing  
 
-### SAST (Automatic, Static)  
+### SAST (Automatic, Static Application Code)  
 Static Application Security Testing  
 It will look into your source code repository and find issues.  It will even give you the filename and line number of the problematic code block.  
 Tools: Semgrep, SonarQube, Snyk Code  
 
-###  SCA (Automatic, Static)
+###  SCA (Automatic, Static Dependency Code)
 Software Composition Analysis   
 It will look into your requirements.txt and give you the known issues in your third party dependencies, along with the installed and fixed version (if fix is available)  
 Tools: Trivy, OWASP Dependency-Check, Snyk Open Source  
@@ -23,12 +23,12 @@ Tester manually tries to break the security of the system.
 
 ## Cataloguing of vulnerabilities
 
-There are two types of standardized cataloguing:
+There are two types of standardized cataloging:
 
 ### CWE (Common Weakness Enumeration)
 These are theoretical weaknesses which can occur in any (web) application in any language or library, be it your source code or a dependency.   
 For Example:  
-CWE-89 (SQL Injection)  
+CWE-89 (SQL Injection)   
 CWE-79 (Cross Site Scripting)  
 
 As of September 2025, there are about 1500 CWEs. Their number grows relatively slower than CVE, as they are theoretical concepts.  
@@ -38,6 +38,8 @@ These are particular vulnerabilities in specific version of a specific package o
 For Example: 
 CVE-2026-4519: webbrowser.open() built-in module function of python allows URLs beginning with "-" which can lead to Command injection (CWE-78)  
 CVE-2026-3087: shutil.unpack_archive()  built-in module function of python in windows can extract a zip outside target directory which can lead to Path Traversal (CWE-22)  
+
+As of September 2025, there are about 70,000 CWEs. Their number is quickly growing by 10,000-20,000 new CVEs every year.  
 
 #### Infamous Recent CVEs
 CVE-2021-44228: Log4Shell  
@@ -53,11 +55,11 @@ CWE is the root cause.
 CVEs are cataloged in National Vulnerability Database (NVD) is maintained by the National Institute of Standards and Technology (NIST).  
 CWEs are cataloged by MITRE Corporation.  
 
-Both are funded by US Govt. In 2025, the Trump administration briefly planned on defunding this program and security experts said that the results of this defunding can be catastrophic as the whole world depends on CVE and CWEs for vulnerabilties.
+Both are funded by US Govt. In 2025, the Trump administration briefly planned on defunding this program and security experts said that the results of this defunding can be catastrophic as the whole world depends on CVE and CWEs for vulnerabilties.  
 
 ## Top Lists
-OWASP Top 10 releases a list of 10 most dangerous families of vulnerabilities once every 3-4 years. Each of the top 10 families may contain 4-5 CWEs
-MITRE Top 25 releases a list of 25 most dangerous CWEs of vulnerabilities every year.
+OWASP Top 10 releases a list of 10 most dangerous families of vulnerabilities once every 3-4 years. Each of the top 10 families may contain 4-5 CWEs.  
+MITRE Top 25 releases a list of 25 most dangerous CWEs of vulnerabilities every year.  
 
 # False Positives
 
