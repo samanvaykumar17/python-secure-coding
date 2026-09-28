@@ -11,7 +11,7 @@
 * Key CWE Mappings: CWE-16 (Configuration), CWE-614 (Sensitive Cookie without 'Secure' attribute), CWE-276 (Incorrect Default Permissions).
 * Remediation: Automate environment hardening, remove unused features/samples, and enforce secure configurations via Infrastructure as Code (IaC) scanning.   
 
-## 3. A03:2025 – Software Supply Chain Failures (New)
+## 3. A03:2025 – Software Supply Chain Failures 
 
 * Description: Vulnerabilities stemming from compromised third-party libraries, open-source dependencies, or insecure CI/CD pipelines and developer tools.   
 * Key CWE Mappings: CWE-1395 (Dependency on Vulnerable Component), CWE-506 (Embedded Malicious Code).
@@ -53,7 +53,7 @@
 * Key CWE Mappings: CWE-778 (Insufficient Logging), CWE-532 (Insertion of Sensitive Information into Log File).
 * Remediation: Log critical security events (logins, access failures), protect log integrity, and set up automated monitoring and alerting pipelines. 
 
-## 10. A10:2025 – Mishandling of Exceptional Conditions (New)
+## 10. A10:2025 – Mishandling of Exceptional Conditions 
 
 * Description: Improper responses to unexpected runtime errors, edge cases, or malformed inputs, leaving systems in an inconsistent or vulnerable state.
 * Key CWE Mappings: CWE-248 (Uncaught Exception), CWE-755 (Improper Handling of Exceptional Conditions), CWE-391 (Unchecked Error Condition).
