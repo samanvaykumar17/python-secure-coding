@@ -23,7 +23,7 @@
 * Key CWE Mappings: CWE-261 (Weak Encryption), CWE-327 (Use of a Broken or Risky Cryptographic Algorithm), CWE-331 (Insufficient Entropy).
 * Remediation: Encrypt all sensitive data at rest and in transit. Use modern, strong algorithms (e.g., AES-256, Argon2 for hashing) and manage keys securely.  
 
-## 5. A05:2025 – Injection
+## 5. A05:2025 – Injection 
 
 * Description: User-supplied untrusted data is not sanitized or interpreted properly, allowing attackers to execute unintended commands or queries (SQL, NoSQL, GraphQL).
 * Key CWE Mappings: CWE-79 (Cross-site Scripting - XSS), CWE-89 (SQL Injection), CWE-20 (Improper Input Validation).
