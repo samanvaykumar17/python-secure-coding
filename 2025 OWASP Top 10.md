@@ -1,5 +1,4 @@
-The [OWASP Top 10:2025](https://top10.owasp.org/2025/en/) lists the ten most critical security risks for web applications, featuring updated categories like Software Supply Chain Failures and Mishandling of Exceptional Conditions. [1, 2] 
-------------------------------
+
 ## 1. A01:2025 – Broken Access Control
 
 * Description: Restrictions on what authenticated users are allowed to do are not properly enforced. Includes IDOR, BOLA, and BFLA.   
